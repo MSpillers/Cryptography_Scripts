@@ -21,3 +21,10 @@ def gcd(a, b):
         return b
     return gcd(b%a, a)
 
+def sgcd(u,v):
+    while v:
+        [u,v] = [v,u%v]
+    return u
+
+    
+

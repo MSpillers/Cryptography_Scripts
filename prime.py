@@ -11,3 +11,16 @@ def pc(x,mct):
         else:
             return 0
         print(ct)
+
+def nextprime(m):
+    if (m%2) == 0:
+        m+=1
+    count=0
+    while count <100:
+        u = random.randrange(2,m-1)
+        if pow(u,m-1,m)==1:
+            count+=1
+        else:
+            count=0 
+            m+=2
+    return m
